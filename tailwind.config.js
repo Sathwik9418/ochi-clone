@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily : {
+        grotesk: ['var(--font-grotesk)'],
+        montreal : ['var(--font-montreal)']
+      }
     },
   },
   plugins: [],
