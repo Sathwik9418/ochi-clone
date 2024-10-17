@@ -1,4 +1,4 @@
-Here's a `README.md` file for your Ochi clone project:
+
 
 ---
 
@@ -64,4 +64,4 @@ This project is a clone of the **Ochi** website, built using modern web technolo
 
 ---
 
-Feel free to modify the content to better reflect your project structure or add any additional features you implement!
+
