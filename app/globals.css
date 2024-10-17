@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --font-montreal: 'NeueMontreal', sans-serif;
+    --font-grotesk: 'FoundersGrotesk', sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'NeueMontreal';
+    src: url('/fonts/NeueMontreal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FoundersGrotesk';
+    src: url('/fonts/FoundersGrotesk-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  

@@ -14,19 +14,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const Grotesk = localFont({
-  src : [{
-    path : "../public/fonts/FoundersGrotesk-SemiBold.ttf",
-  }],
-  variable : "--font-grotesk"
-});
 
-const Montreal = localFont({
-  src : [{
-    path : "../public/fonts/NeueMontreal-Regular.ttf"
-  }],
-  variable : "--font-montreal"
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -39,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${Montreal.variable} ${geistSans.variable} ${geistMono.variable} ${Grotesk.variable} antialiased`}
+        className={`  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
