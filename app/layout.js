@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-
+import {ReactLenis} from './utils/lenis'
 
 
 const geistSans = localFont({
@@ -26,11 +26,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <ReactLenis root>
       <body
         className={`  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
+      </ReactLenis>
     </html>
   );
 }

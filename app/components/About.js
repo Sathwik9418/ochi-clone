@@ -1,8 +1,9 @@
+"use client";
 import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-full p-20 bg-lime-300 rounded-tl-3xl rounded-tr-3xl text-black'>
+    <div className='block -mt-5 w-full p-20 bg-lime-300 rounded-tl-3xl rounded-tr-3xl text-black'>
       <h1 className='font-montreal text-[3.7vw] leading-[4.5vw] tracking-tight'>Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell products, explain complex ideas, and hire great people.
 What you can expect:</h1>
         <div className="w-full border-t-[1px] mt-20 border-[#99AD53] flex gap-5">

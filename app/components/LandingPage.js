@@ -1,9 +1,12 @@
+"use client";
+import { easeIn, motion } from 'framer-motion';
 import React from 'react'
 import { TfiArrowTopRight } from "react-icons/tfi";
 
 function LandingPage() {
+  
   return (
-    <div className='w-full h-screen bg-zinc-900 pt-1'>
+    <div data-scroll data-scroll-speed="-.8"   className='w-full h-screen bg-zinc-900 pt-1'>
       <div className="textstructure mt-52 px-20">
 
         {["We Create" ,"Eye Opening" ,"Presentations"].map((item,index)=>{
@@ -11,9 +14,16 @@ function LandingPage() {
             <div className="masker">
                 <div className="w-fit flex items-end overflow-hidden">
                   {index===1 && 
-                  (<div className='mr-[1vw] w-[8vw] rounded-md h-[5.7vw] relative bg-green-500 '></div>
+                  (
+                    <motion.div 
+                    initial={{width:0}} 
+                    animate={{width:"9vw"}} 
+                    transition={{ease:[0.76, 0, 0.24, 1], duration : 1.1}} 
+                    className='mr-[1vw] w-[8vw] rounded-md h-[5.7vw] relative bg-green-500 bg-cover bg-center'
+                    style={{ backgroundImage: "url('/images/img.jpg')" }} // Add the path to your image here
+                  ></motion.div>
                   )}
-                  <h1 key={index} className="pt-[2vw] -mb-[.1vw] uppercase text-[9vw] leading-[.75] font-grotesk leading-none leading-[5.3vw]">
+                  <h1 key={index} className="pt-[2vw] -mb-[.1vw] uppercase text-[8vw] leading-[.76] font-grotesk">
                   {item}
                 </h1>
             </div>
