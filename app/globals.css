@@ -12,10 +12,12 @@
     src: url('/fonts/NeueMontreal-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    display: swap;
   }
   
   @font-face {
     font-family: 'FoundersGrotesk';
     src: url('/fonts/FoundersGrotesk-SemiBold.ttf') format('truetype');
+    display: swap;
   }
   
