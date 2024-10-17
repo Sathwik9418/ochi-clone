@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Ochi Clone
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is a clone of the **Ochi** website, built using modern web technologies like Next.js, React, Tailwind CSS, Locomotive Scroll, and Lenis. The clone captures the interactive design elements such as smooth scrolling, hover animations, and dynamic text effects seen on the original Ochi website.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 1. **Landing Page with Animated Text**
+   - The landing page includes eye-catching, large, animated text. This is implemented using `Framer Motion` for smooth entrance animations, giving a dynamic look to phrases like _"We Create Eye Opening Presentations"_.
+   - Customizable text blocks can be wrapped in animated containers, and subtle green backgrounds can contain images.
 
-## Learn More
+### 2. **Featured Projects Section**
+   - Two featured project cards are displayed side-by-side.
+   - Each card has hover-triggered animations using `Framer Motion`. When hovered over, project names (e.g., "FYDE" and "TRAVA") animate smoothly into view.
+   - The background images for the cards are dynamically loaded and provide a visual preview of the project.
+   - Animation is applied on individual characters to provide a fluid and engaging effect on hover.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. **Custom Scroll Experience**
+   - Smooth scrolling is implemented using `Locomotive Scroll` and `Lenis`, providing a polished user experience with inertia and parallax effects.
+   - Scrolling speed and direction of various sections can be customized with attributes like `data-scroll-speed`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. **Navigation Bar**
+   - A responsive navigation bar with links to different sections of the website, designed to maintain consistency with the Ochi website's minimalist approach.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 5. **About, Cards, and Footer Sections**
+   - Additional sections such as About, Cards, and Footer are designed to enhance the site's structure and provide more information.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js**: For server-side rendering and optimized performance.
+- **React.js**: For building UI components.
+- **Framer Motion**: To handle complex animations.
+- **Tailwind CSS**: For styling and responsive design.
+- **Locomotive Scroll & Lenis**: For smooth scroll interactions and inertia-based scrolling animations.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installation and Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ochi-clone.git
+   cd ochi-clone
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open the project in your browser at `http://localhost:3000`.
+
+## Future Improvements
+
+- Additional animations for more sections of the site.
+- Optimization for performance and smoother scroll effects.
+- Enhancement of responsiveness for mobile devices.
+
+---
+
+
